@@ -1,0 +1,7 @@
+#ignored files?
+env/*
+venv/*
+envs/
+client/nodes_modules/*
+
+*.idea
