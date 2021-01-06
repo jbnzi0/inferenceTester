@@ -1,0 +1,25 @@
+.baseText {
+    color : grey ; 
+    
+}
+
+.footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: grey;
+    
+    
+}
+
+.bottomdiv {
+    padding-bottom:60px;
+    
+}
+
+.navbar {
+    width: inherit;
+    
+    min-height: 70px ;
+}
