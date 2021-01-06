@@ -11,7 +11,7 @@ import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
 import logo from "../images/logo_bee.png";
 import styles from "../styles.module.css";
-
+import ButtonAlgo from "./ButtonAlgo"
 
 import React, {Component} from "react";
 
@@ -23,7 +23,12 @@ class Algorithm extends Component {
 
 
         return(
-            <div>Algo</div>
+            <div>
+                <ButtonAlgo algoName="Single Shot Multiple Detector"/>
+                <ButtonAlgo algoName="YOLO v5"/>
+                <ButtonAlgo algoName="Faster-RCNN"/>
+                <ButtonAlgo algoName="EfficientDet v2"/>
+            </div>
 
 
         )
