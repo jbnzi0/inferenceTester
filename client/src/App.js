@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import {
   BrowserRouter as Router,
   Route,
+  Redirect,
 } from "react-router-dom";
 import { render } from "react-dom";
 import NavBar from "./NavBar/NavBar";
@@ -18,7 +19,9 @@ function App() {
     <div className="App">
         <Router>
           <Header/>
-          <Route exact path="/" component={UploadImage} />     
+          <Route exact path="/" component={UploadImage} > 
+            <Redirect to="/uploadimage" />
+          </Route>    
           <Route exact path="/uploadimage" component={UploadImage} />
           <Route exact path="/algorithm" component={Algorithm} />
           <Route exact path="/inferenceresults" component={InferenceResults} />
