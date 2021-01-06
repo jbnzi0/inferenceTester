@@ -1,0 +1,59 @@
+.baseText {
+    color : grey ; 
+    
+}
+
+.footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: grey;
+    
+    
+}
+
+.bottomdiv {
+    padding-bottom:60px;
+    
+}
+
+.navbar {
+    
+    
+    min-height: 70px ;
+}
+
+.nextbutton {
+    color : white;
+    background-color: #A6EC76 ;
+    min-width: 100%;
+    min-height:100%;
+    
+    
+}
+
+.buttonlink{
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color : white ; 
+}
+
+.nextbutton:hoover{
+    color : white;
+    background-color: teal;
+}
+
+.breadresp{
+    background-color: #1B1D1C;
+    min-height: 100%;
+}
+
+.breadlinks{
+    background-color: #1B1D1C;
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color: grey;
+}
+
+
