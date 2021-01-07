@@ -1,5 +1,5 @@
 .baseText {
-    color : grey ; 
+    color :#3D4451 ; 
     
 }
 
@@ -8,7 +8,7 @@
     left:0;
     bottom:0;
     right:0;
-    background-color: grey;
+    background-color: #4C5367;
     
     
 }
@@ -26,7 +26,7 @@
 
 .nextbutton {
     color : white;
-    background-color: #A6EC76 ;
+    background-color: #47D292 ;
     min-width: 100%;
     min-height:100%;
     
@@ -45,7 +45,7 @@
 }
 
 .breadresp{
-    background-color: #1B1D1C;
+    background-color: #3B4055;
     min-height: 100%;
     height: 100%;
 }
@@ -55,6 +55,49 @@
     text-decoration :none !important;
     text-decoration-color : black ;
     color: grey;
+}
+
+.updloadimage{
+    
+    margin-top: 7%;
+    margin-bottom: 7%;
+    min-height: 20%;
+}
+
+.uploadimagecontainer{
+    align-content: center;
+   
+    background-color: #F8F9FC;
+    position: relative;
+    padding-top: 20%;
+    height:100%;
+    width: 100%;
+    
+    
+    
+}
+
+.rowheight{
+    height:100%;
+}
+
+.uploadleftdiv{
+    padding: 5%;
+    padding-left: 5%;
+}
+
+.uploadrightdiv{
+    padding: 5%px;
+    padding-right: 5%;
+}
+
+.alignleft {
+
+    float: left;
+}
+
+h2{
+    color : #3D4451 ; 
 }
 
 
