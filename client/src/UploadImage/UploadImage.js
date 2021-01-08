@@ -18,12 +18,14 @@ import React, {Component} from "react";
 
 
 
-
 class UploadImage extends Component {
+
+    
 
     render(){
         
-
+        
+        
 
         return(
             <Container className={styles.updloadimage}>
@@ -50,9 +52,10 @@ class UploadImage extends Component {
                                         component="label"
                                         >
                                         Upload your files
-                                        <input
+                                        <input id="images"
                                             type="file"
                                             hidden
+                                            multiple
                                         />
                                     </Button>
                             </div>
