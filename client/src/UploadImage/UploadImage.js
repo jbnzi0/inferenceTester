@@ -36,11 +36,18 @@ class UploadImage extends Component {
         }
         , 
         () => {
-            console.log(this.state.images)
+            var images = this.state.images;
+            
+            
+            //console.log(this.state.images);
             var formdata = new FormData();
-            formdata.append("file", this.state.images[0], this.state.images[0].name);
+            
+            for(var i=0; i<images.length; i++){
+                formdata.append("file", images[i], images[i].name);
+            }
             formdata.append("algorithm", "yolo");
 
+           
             var requestOptions = {
             method: 'POST',
             body: formdata,
@@ -57,8 +64,7 @@ class UploadImage extends Component {
         
         
         
-        }
-        )
+        })
         
       }
 
