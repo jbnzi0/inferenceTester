@@ -35,9 +35,34 @@ class UploadImage extends Component {
          
         }
         , 
-        () => console.log(this.state.images))
+        () => {
+            console.log(this.state.images)
+            var formdata = new FormData();
+            formdata.append("file", this.state.images[0], this.state.images[0].name);
+            formdata.append("algorithm", "yolo");
+
+            var requestOptions = {
+            method: 'POST',
+            body: formdata,
+            redirect: 'follow'
+            };
+
+            fetch("http://localhost:8080/inference/test", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+                        
+        
+        
+        
+        
+        
+        }
+        )
         
       }
+
+        
      
     render(){
         
