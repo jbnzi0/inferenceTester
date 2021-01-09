@@ -20,13 +20,30 @@ import React, {Component} from "react";
 
 class UploadImage extends Component {
 
-    
+    constructor(props){
+        super(props)
+        this.state = {
+          file: null,
+          images : []
+        }
+        this.handleChange = this.handleChange.bind(this)
+      }
 
+      handleChange(event) {
+        this.setState({
+          images: (event.target.files)
+         
+        }
+        , 
+        () => console.log(this.state.images))
+        
+      }
+     
     render(){
         
+        console.log(this.state.file);
+        console.log("HELLO");
         
-        
-
         return(
             <Container className={styles.updloadimage}>
                 <Row>
@@ -53,11 +70,13 @@ class UploadImage extends Component {
                                         >
                                         Upload your files
                                         <input id="images"
+                                            onChange={this.handleChange}
                                             type="file"
                                             hidden
                                             multiple
                                         />
                                     </Button>
+                                    
                             </div>
                         </Row>
                         
