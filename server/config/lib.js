@@ -23,9 +23,7 @@ module.exports = {
                 child.stdout.on('data', (data) => {
                     console.log("\n" + data.toString());
                 });
-                child.on('close', (code) => {
-                    console.log(`child process close all stdio with code ${code}`);
-                });
+
                 return "Inference tested successfully on YOLOv5";
                 break;
             default:
