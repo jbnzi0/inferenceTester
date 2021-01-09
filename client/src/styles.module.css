@@ -1,0 +1,103 @@
+.baseText {
+    color :#3D4451 ; 
+    
+}
+
+.footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: #4C5367;
+    
+    
+}
+
+.bottomdiv {
+    padding-bottom:60px;
+    
+}
+
+.navbar {
+    
+    
+    min-height: 70px ;
+}
+
+.nextbutton {
+    color : white;
+    background-color: #47D292 ;
+    min-width: 100%;
+    min-height:100%;
+    
+    
+}
+
+.buttonlink{
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color : white ; 
+}
+
+.nextbutton:hoover{
+    color : white;
+    background-color: teal;
+}
+
+.breadresp{
+    background-color: #3B4055;
+    min-height: 100%;
+    height: 100%;
+}
+
+.breadlinks{
+    background-color: #1B1D1C;
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color: grey;
+}
+
+.updloadimage{
+    
+    margin-top: 7%;
+    margin-bottom: 7%;
+    min-height: 20%;
+}
+
+.uploadimagecontainer{
+    align-content: center;
+   
+    background-color: #F8F9FC;
+    position: relative;
+    padding-top: 20%;
+    height:100%;
+    width: 100%;
+    
+    
+    
+}
+
+.rowheight{
+    height:100%;
+}
+
+.uploadleftdiv{
+    padding: 5%;
+    padding-left: 5%;
+}
+
+.uploadrightdiv{
+    padding: 5%px;
+    padding-right: 5%;
+}
+
+.alignleft {
+
+    float: left;
+}
+
+h2{
+    color : #3D4451 ; 
+}
+
+
