@@ -1,6 +1,10 @@
 # Inference Tester
 
-Foobar is a Python library for dealing with word pluralization.
+Inference Tester is a web application that can test the inference of several DL pre-trained models. 
+
+## How does it works 
+
+It takes in input one or more images of pollens analyzed in the laboratory (x100), allows to choose between SSD, YOLOv5, EfficientDet and Faster-RCNN.
 
 ## Installation
 
