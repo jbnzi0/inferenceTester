@@ -23,14 +23,17 @@ router.post('/test', async (req, res) => {
 
         for(var i=0; i<images.length; i++){
 
-            //console.log(images[i].originalname);
+            console.log(images[i].originalname);
             var pic = "deepnet/IMG/" + images[i].originalname;
             await fs.writeFile(pic, images[i].buffer, (err) => {
                 if(err) console.error("Error on file creation");
             });
         }
+        
         result = lib.inference(algo);
         res.status(201).send(result);
+        
+        
     }
 
 });
