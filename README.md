@@ -29,9 +29,9 @@ Same in server/config/lib.js. Put your path at the line 7 and then whether you a
 
 When the configuration is done, you just need to start the client with npm start and you can start the server with nodemon or node.
 
-# Algorithms 
+## Algorithms 
 
-You can only test the inference with YOLOv5 on a CPU at the moment.
+You can only test the inference with YOLOv5 on a CPU at the moment. We might add the support of the other algorithms on the list later on.
 
 - [x] YOLOv5
 - [ ] EfficientDet-v2
