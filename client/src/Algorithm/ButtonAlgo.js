@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Icon from "./Icon"
+import "./AlgoCSS.css";
 
 class ButtonAlgo extends Component {
     constructor() {

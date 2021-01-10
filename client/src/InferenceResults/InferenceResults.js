@@ -11,20 +11,73 @@ import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
 import logo from "../images/logo_bee.png";
 import styles from "../styles.module.css";
+import "./inferenceresults.css";
+import Carousel from 'react-elastic-carousel';
+import ReactDOM from "react-dom";
+
 
 
 import React, {Component} from "react";
 
 
+function importAll(r) {
+    return r.keys().map(r);
+  }
+  
+const images = importAll(require.context('./results', false, /\.(png|jpe?g|svg)$/));
+
+let copy=[];
+for(let i=0;i<images.length;i++){
+  copy.push(<div key={i}> <img src={images[i].default}></img></div> ) 
+ }
+
 class InferenceResults extends Component {
+
+    
+    constructor(props) {
+        super(props);
+     
+        this.state = {
+            setComp:copy
+        };
+      }
+     
+
+    displayCarousel(){ 
+        var result  ; 
+                
+                
+                
+        for(var i = 0 ; i < images.length ; i++){
+            result =  ( <div key={i}> <img src={images[i].default}></img></div> 
+                
+                
+                
+                
+                )  ;
+                
+        }      
+        console.log(this.state.setComp[0].type)  ;
+        
+        
+    
+        return result ; 
+      }
 
     render(){
         
-
+        var displaycarousel = this.displayCarousel();
 
         return(
-            <div>InferenceResults</div>
+            <div>
+           
+            <Carousel>
+               
+                {this.state.setComp}
+                
+            </Carousel>
 
+        </div>
 
         )
 
