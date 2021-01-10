@@ -8,12 +8,17 @@ It takes in input one or more images of pollens analyzed in the laboratory (x100
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+For the React client, you need to go to the client folder to install the required packages. You have to do the same for the Express server.
 
 ```bash
-pip install foobar
+npm install
 ```
 
+After that, go to deepnet/YOLOv5 and unzip the zip file. Go inside the newly created folder (yolov5) and install the requirements.txt.
+
+```bash
+pip -r install requirements.txt
+```
 ## Usage
 
 ```python
