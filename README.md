@@ -27,11 +27,3 @@ Same in server/config/lib.js. Put your path at the line 7 and then whether you a
 ## Usage
 
 When the configuration is done, you just need to start the client with npm start and you can start the server with nodemon or node.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
