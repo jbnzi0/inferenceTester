@@ -2,7 +2,7 @@
 
 Inference Tester is a web application that can test the inference of several DL pre-trained models. This app is a proof-of-concept developed to test the inferences on our models from [beeopicture](https://github.com/Ghaust/beeopicture). We used Adobe XD to design the app and React/Express for the development.
 
-[](https://media.discordapp.net/attachments/486616090202603530/797837456576741396/Screenshot_2021-01-10_at_15.40.35.png)
+![](https://media.discordapp.net/attachments/486616090202603530/797837456576741396/Screenshot_2021-01-10_at_15.40.35.png)
 ## How does it works 
 
 It takes in input one or more images of pollens analyzed in the laboratory (x100), allows to choose between SSD, YOLOv5, EfficientDet and Faster-RCNN.
