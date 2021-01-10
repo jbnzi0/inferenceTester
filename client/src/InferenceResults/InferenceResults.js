@@ -26,28 +26,55 @@ function importAll(r) {
   
 const images = importAll(require.context('./results', false, /\.(png|jpe?g|svg)$/));
 
+let copy=[];
+for(let i=0;i<images.length;i++){
+  copy.push(<div key={i}> <img src={images[i].default}></img></div> ) 
+ }
 
 class InferenceResults extends Component {
 
-    state = {
-        items: [
-          {id: 1, title: 'item #1'},
-          {id: 2, title: 'item #2'},
-          {id: 3, title: 'item #3'},
-          {id: 4, title: 'item #4'},
-          {id: 5, title: 'item #5'}
-        ]
+    
+    constructor(props) {
+        super(props);
+     
+        this.state = {
+            setComp:copy
+        };
+      }
+     
+
+    displayCarousel(){ 
+        var result  ; 
+                
+                
+                
+        for(var i = 0 ; i < images.length ; i++){
+            result =  ( <div key={i}> <img src={images[i].default}></img></div> 
+                
+                
+                
+                
+                )  ;
+                
+        }      
+        console.log(this.state.setComp[0].type)  ;
+        
+        
+    
+        return result ; 
       }
 
     render(){
         
-        const { items } = this.state;
+        var displaycarousel = this.displayCarousel();
 
         return(
             <div>
-            
+           
             <Carousel>
-                {items.map(item => <div key={item.id}>{item.title}</div>)}
+               
+                {this.state.setComp}
+                
             </Carousel>
 
         </div>
