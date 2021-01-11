@@ -166,7 +166,7 @@ class NavBar extends Component {
         var displaybutton = this.displayNextButton();
         
         return(
-            <Container maxWidth={false}  >
+            <Container maxWidth={false} className={css.bar}   >
                 
 
                 
@@ -178,10 +178,6 @@ class NavBar extends Component {
                             </Col>
                             
                             <Col lg="2" md="6" sm="12">
-                                
-                                   
-                                  
-
                                   {displaybutton}
                             </Col>
                         </Row>
