@@ -1,6 +1,7 @@
 const express = require('express');
     bodyParser = require('body-parser');
     inference = require('./routers/inference');
+    cors = require('cors')
     multer = require('multer');
     app = express();
     multerMid = multer({
@@ -10,9 +11,10 @@ const express = require('express');
         },
     });
     
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-app.use(multerMid.single('file'));
+app.use(multerMid.array('file')); //image
 app.use('/inference', inference);
 
 
