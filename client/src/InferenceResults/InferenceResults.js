@@ -12,6 +12,8 @@ import AppBar from '@material-ui/core/AppBar';
 import logo from "../images/logo_bee.png";
 import styles from "../styles.module.css";
 import "./inferenceresults.css";
+import css from "./inference.module.css";
+
 import Carousel from 'react-elastic-carousel';
 import ReactDOM from "react-dom";
 
@@ -43,35 +45,14 @@ class InferenceResults extends Component {
       }
      
 
-    displayCarousel(){ 
-        var result  ; 
-                
-                
-                
-        for(var i = 0 ; i < images.length ; i++){
-            result =  ( <div key={i}> <img src={images[i].default}></img></div> 
-                
-                
-                
-                
-                )  ;
-                
-        }      
-        console.log(this.state.setComp[0].type)  ;
-        
-        
-    
-        return result ; 
-      }
-
     render(){
         
-        var displaycarousel = this.displayCarousel();
+       
 
         return(
             <div>
            
-            <Carousel>
+            <Carousel className={css.carousel}>
                
                 {this.state.setComp}
                 

@@ -1,0 +1,61 @@
+#pointer {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background: #3B4055;
+    
+  }
+
+.textDiv{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background: #3B4055;
+    
+}
+
+.title{
+    color:#FFFFFF;
+}
+  
+.description{
+    color: #8E909D;
+}
+
+  
+  
+  .row{
+      background-color: #4C5367;
+      margin-left: 0;
+      margin-right: 0;
+      flex-wrap: none !important;
+  }
+
+
+  .vertical{
+    border-right: 1px solid #F8F9FC;
+   
+  }
+
+
+
+  .nextbutton {
+    color : white;
+    background-color: #47D292 ;
+    min-width: 100%;
+    min-height:100%;
+    
+    
+}
+
+.buttonlink{
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color : white ; 
+}
+
+.nextbutton:hoover{
+    color : white;
+    background-color: teal;
+}

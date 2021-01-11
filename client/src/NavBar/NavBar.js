@@ -1,18 +1,13 @@
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 import {withRouter} from "react-router";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import {Tabs, Tab} from '@material-ui/core';
 import {  Row, Col } from 'reactstrap';
 import {
     Link
   } from "react-router-dom";
 import Container from '@material-ui/core/Container';
-import styles from "../styles.module.css";
-
 import React, {Component} from "react";
-import Button from '@material-ui/core/Button';
-
+import css from "./navbar.module.css";
 
 class NavBar extends Component {
 
@@ -27,16 +22,16 @@ class NavBar extends Component {
             result=(  <div >
                 <Row>
                 
-                        <Col lg="4" className={styles.breadresp}>
+                        <Col lg="4" className={css.textDiv} >
                         
-                        <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                        <Link className={styles.breadlinks} to="/uploadimage"  href="/uploadimage" >
-                            <Typography color="white">UPLOAD IMAGES</Typography>
+                        <div id={css.pointer} aria-label="breadcrumb" >
+                        <Link  to="/uploadimage"  href="/uploadimage" >
+                            <Typography className={css.title}>UPLOAD IMAGES</Typography>
                             <Typography color="grey">Please upload your images for pollen detection</Typography>
                         </Link>
                         
                         
-                        </Breadcrumbs>
+                        </div>
                     
                      </Col>
                      <Col lg="4">
@@ -54,30 +49,32 @@ class NavBar extends Component {
                 <Row>
 
                 
-                        <Col lg="4" className={styles.breadresp}>
+                        <Col lg="4"   className={css.textDiv}>
 
-                            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                                <Link className={styles.breadlinks} to="/uploadimage"  href="/uploadimage" >
-                                    <Typography color="white">UPLOAD IMAGES</Typography>
-                                    <Typography color="grey">Please upload your images for pollen detection</Typography>
+                            <div id={css.pointer} aria-label="breadcrumb" >
+                                <Link  to="/uploadimage"  href="/uploadimage" >
+                                    <Typography className={css.title} >[UPLOAD IMAGES]</Typography>
+                                    <Typography className={css.description}>Please upload your images for pollen detection</Typography>
                                 </Link>
 
 
-                            </Breadcrumbs>
+                            </div>
 
                         </Col>
-                        <Col lg="4" className={styles.breadresp}>
+                        <div className={css.vertical}></div>
+                        <Col lg="4"  className={css.textDiv} >
 
-                            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                                <Link className={styles.breadlinks} to="/algorithm"  href="/algorithm" >
-                                    <Typography color="white">CHOOSE YOUR ALGO</Typography>
-                                    <Typography color="grey">Please choose the detection algorithm</Typography>
+                            <div id={css.pointer}  aria-label="breadcrumb">
+                                <Link to="/algorithm"  href="/algorithm" >
+                                    <Typography className={css.title} >[CHOOSE YOUR ALGO]</Typography>
+                                    <Typography className={css.description}>Please choose the detection algorithm</Typography>
                                 </Link>
 
 
-                            </Breadcrumbs>
+                            </div>
 
                         </Col>
+                        
                         <Col lg="4">
 
                         </Col>
@@ -86,46 +83,49 @@ class NavBar extends Component {
 
 
         if(window.location.pathname.includes('inferenceresults') )
-            result=(  <div >
-                        <Row>
+            result=(  <div className={css.textDiv}>
+                        <Row >
 
                         
-                        <Col lg="4" className={styles.breadresp}>
+                        <Col lg="4"  className={css.textDiv}>
 
-                            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                                <Link className={styles.breadlinks} to="/uploadimage"  href="/uploadimage" >
-                                    <Typography color="white">UPLOAD IMAGES</Typography>
-                                    <Typography color="grey">Please upload your images for pollen detection</Typography>
+                            <div id={css.pointer}  aria-label="breadcrumb" >
+                                <Link  to="/uploadimage"  href="/uploadimage" >
+                                    <Typography className={css.title}>UPLOAD IMAGES</Typography>
+                                    <Typography className={css.description}>Please upload your images for pollen detection</Typography>
                                 </Link>
 
 
-                            </Breadcrumbs>
+                            </div>
 
                         </Col>
-                        <Col lg="4" className={styles.breadresp}>
+                        <div className={css.vertical}></div>
+                        <Col lg="4"  className={css.textDiv}>
 
-                            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                                <Link className={styles.breadlinks} to="/algorithm"  href="/algorithm" >
-                                    <Typography color="white">CHOOSE YOUR ALGO</Typography>
-                                    <Typography color="grey">Please choose the detection algorithm</Typography>
+                            <div id={css.pointer}  aria-label="breadcrumb" >
+                                <Link  to="/algorithm"  href="/algorithm" >
+                                    <Typography className={css.title}>CHOOSE YOUR ALGO</Typography>
+                                    <Typography className={css.description}>Please choose the detection algorithm</Typography>
                                 </Link>
 
 
-                            </Breadcrumbs>
+                            </div>
 
                         </Col>
-                        <Col lg="4" className={styles.breadresp}>
+                        <div className={css.vertical}></div>
+                        <Col lg="4"  className={css.textDiv} >
 
-                            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb" className={styles.bread}>
-                                <Link className={styles.breadlinks} to="/inferenceresults"  href="/inferenceresults" >
-                                    <Typography color="white">INFERENCE RESULTS</Typography>
-                                    <Typography color="grey">Results of the pollen detection</Typography>
+                            <div id={css.pointer} aria-label="breadcrumb" >
+                                <Link    to="/inferenceresults"  href="/inferenceresults" >
+                                    <Typography className={css.title}>INFERENCE RESULTS</Typography>
+                                    <Typography className={css.description}>Results of the pollen detection</Typography>
                                 </Link>
 
 
-                            </Breadcrumbs>
+                            </div>
 
                         </Col>
+                        <div className={css.vertical}></div>
                         </Row>
                         </div>);
         
@@ -140,21 +140,29 @@ class NavBar extends Component {
                 
                 
         if(window.location.pathname.includes('uploadimage') )
-            result=(  <Link className={styles.buttonlink} maxWidth={false} minWidth={false}  to="/algorithm"  href="/algorithm" >
-                                <button type="button" className={styles.nextbutton}>
+            result=(  <Link className={css.buttonlink} maxWidth={false} minWidth={false}  to="/algorithm"  href="/algorithm" >
+                                <button type="button" className={css.nextbutton}>
                                     NEXT
                                     </button>
                         </Link>
              );
         
         if(window.location.pathname.includes('algorithm') )
-            result=(  <Link className={styles.buttonlink} maxWidth={false} minWidth={false}  to="/inferenceresults"  href="/inferenceresults" >
-                            <button type="button" className={styles.nextbutton}>
+            result=(  <Link className={css.buttonlink} maxWidth={false} minWidth={false}  to="/inferenceresults"  href="/inferenceresults" >
+                            <button type="button" className={css.nextbutton}>
                                 NEXT
                                 </button>
                     </Link>
             );
-        
+
+        if(window.location.pathname.includes('inferenceresults') )
+        result=(  <Link className={css.buttonlink} maxWidth={false} minWidth={false}  to="/inferenceresults"  href="/inferenceresults" >
+                        <button type="button" className={css.nextbutton}>
+                            NEXT
+                            </button>
+                </Link>
+        );
+    
     
         return result ; 
       }
@@ -165,12 +173,12 @@ class NavBar extends Component {
         var displaybutton = this.displayNextButton();
         
         return(
-            <Container className={styles.footer} position="static" maxWidth={false}>
+            <Container maxWidth={false}  >
                 
 
                 
-                        <Row >
-                            <Col lg="10" md="12" sm="12" className={styles.navbar}> 
+                        <Row className={css.row}>
+                            <Col lg="10" md="12" sm="12" > 
                                 <div  >
                                     {display}
                                 </div>          
@@ -182,14 +190,6 @@ class NavBar extends Component {
                                   
 
                                   {displaybutton}
-
-                                 
-                                  
-                                    
-                                    
-                                    
-                               
-                                
                             </Col>
                         </Row>
                
