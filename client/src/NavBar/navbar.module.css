@@ -46,7 +46,7 @@
     background-color: #47D292 ;
     min-width: 100%;
     min-height:100%;
-    
+    padding-right: 0;
     
 }
 
@@ -54,6 +54,12 @@
     text-decoration :none !important;
     text-decoration-color : black ;
     color : white ; 
+    padding-right: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+  
 }
 
 .nextbutton:hoover{

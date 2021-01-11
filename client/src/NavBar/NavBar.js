@@ -171,7 +171,7 @@ class NavBar extends Component {
 
                 
                         <Row className={css.row}>
-                            <Col lg="10" md="12" sm="12" > 
+                            <Col lg="10" md="6" sm="12" > 
                                 <div  >
                                     {display}
                                 </div>          
