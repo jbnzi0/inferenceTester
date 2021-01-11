@@ -25,7 +25,7 @@ class NavBar extends Component {
                         
                         <div id={css.pointer} aria-label="breadcrumb" >
                         <Link  to="/uploadimage"  href="/uploadimage" >
-                            <Typography className={css.title}>[UPLOAD IMAGES]</Typography>
+                            <Typography className={css.title}>UPLOAD IMAGES</Typography>
                             <Typography className={css.description}>Please upload your images for pollen detection</Typography>
                         </Link>
                         
@@ -52,7 +52,7 @@ class NavBar extends Component {
 
                             <div id={css.pointer} aria-label="breadcrumb" >
                                 <Link  to="/uploadimage"  href="/uploadimage" >
-                                    <Typography className={css.title} >[UPLOAD IMAGES]</Typography>
+                                    <Typography className={css.title} >UPLOAD IMAGES</Typography>
                                     <Typography className={css.description}>Please upload your images for pollen detection</Typography>
                                 </Link>
 
@@ -64,7 +64,7 @@ class NavBar extends Component {
 
                             <div id={css.pointer}  aria-label="breadcrumb">
                                 <Link to="/algorithm"  href="/algorithm" >
-                                    <Typography className={css.title} >[CHOOSE YOUR ALGO]</Typography>
+                                    <Typography className={css.title} >CHOOSE YOUR ALGO</Typography>
                                     <Typography className={css.description}>Please choose the detection algorithm</Typography>
                                 </Link>
 

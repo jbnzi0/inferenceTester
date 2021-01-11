@@ -1,6 +1,5 @@
 import {  Row, Col } from 'reactstrap';
 import Container from '@material-ui/core/Container';
-import styles from "../styles.module.css";
 import iso from "../images/iso.png";
 import Button from '@material-ui/core/Button';
 import React, {Component} from "react";
