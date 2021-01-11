@@ -24,25 +24,7 @@
     min-height: 70px ;
 }
 
-.nextbutton {
-    color : white;
-    background-color: #47D292 ;
-    min-width: 100%;
-    min-height:100%;
-    
-    
-}
 
-.buttonlink{
-    text-decoration :none !important;
-    text-decoration-color : black ;
-    color : white ; 
-}
-
-.nextbutton:hoover{
-    color : white;
-    background-color: teal;
-}
 
 .breadresp{
     background-color: #3B4055;
