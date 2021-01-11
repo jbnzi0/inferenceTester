@@ -32,7 +32,9 @@
       margin-left: 0;
       margin-right: 0;
       flex-wrap: nowrap !important;
-      
+      position: absolute;
+      bottom: 0;
+      width: 100%;
   }
 
 
@@ -63,3 +65,4 @@
     padding-top: 10px;
     
 }
+
