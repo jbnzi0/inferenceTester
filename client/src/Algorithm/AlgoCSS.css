@@ -5,7 +5,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 50px;
-    margin-top: 10%;
+    margin-top: 7%;
+    margin-left: 11%;
+    margin-right: 10%;
+    
   }
   
   .selectedButton {

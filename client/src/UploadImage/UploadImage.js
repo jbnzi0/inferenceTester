@@ -49,7 +49,7 @@ class UploadImage extends Component {
 
         }
         )
-        })
+        
 
         
       }
@@ -63,15 +63,19 @@ class UploadImage extends Component {
             <Container >
                 <Row className={css.updloadimage}>
                     <Col className={css.uploadleftdiv} lg="6">
-                        <Row >
+                        <Row className={css.up} >
                             <h2  className={css.alignleft}>Upload Images</h2>
                         </Row>
                         <Row className={css.rowheight}>
                             <div className={css.uploadimagecontainer}>
                                 <h2>Drag and Drop files here</h2>
                                 <br></br>
+                                <br></br>
                                 <h3>OR</h3>
-                                    <Button style={{
+                                <div className={css.button}>
+
+                                
+                                    <Button  style={{
                                             borderRadius: 10,
                                             backgroundColor: "#1C73FC",
                                             padding: "18px 36px",
@@ -92,6 +96,7 @@ class UploadImage extends Component {
                                             multiple
                                         />
                                     </Button>
+                                    </div>
                                     
                             </div>
                         </Row>
