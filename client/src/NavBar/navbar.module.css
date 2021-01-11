@@ -7,7 +7,7 @@
   }
 
 .textDiv{
-    text-align: center;
+    text-align: left;
     width: 100%;
     height: 80px;
     position: relative;
@@ -16,10 +16,12 @@
 }
 
 .title{
+    padding-top: 15px;
     color:#FFFFFF;
 }
   
 .description{
+    padding-top: 5px;
     color: #8E909D;
 }
 
@@ -55,4 +57,9 @@
 .nextbutton:hoover{
     color : white;
     background-color: teal;
+}
+
+.linkdiv{
+    padding-top: 10px;
+    
 }

@@ -112,7 +112,7 @@ class NavBar extends Component {
                         <Col lg="4"  className={css.textDiv} >
 
                             <div id={css.pointer} aria-label="breadcrumb" >
-                                <Link    to="/inferenceresults"  href="/inferenceresults" >
+                                <Link className={css.linkdiv}    to="/inferenceresults"  href="/inferenceresults" >
                                     <Typography className={css.title}>INFERENCE RESULTS</Typography>
                                     <Typography className={css.description}>Results of the pollen detection</Typography>
                                 </Link>

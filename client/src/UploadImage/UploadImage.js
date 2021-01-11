@@ -4,6 +4,7 @@ import styles from "../styles.module.css";
 import iso from "../images/iso.png";
 import Button from '@material-ui/core/Button';
 import React, {Component} from "react";
+import css from "./upload.module.css";
 
 class UploadImage extends Component {
 
@@ -51,14 +52,14 @@ class UploadImage extends Component {
 
         
         return(
-            <Container className={styles.updloadimage}>
-                <Row>
-                    <Col className={styles.uploadleftdiv} lg="6">
+            <Container >
+                <Row className={css.updloadimage}>
+                    <Col className={css.uploadleftdiv} lg="6">
                         <Row >
-                            <h2  className={styles.alignleft}>Upload Images</h2>
+                            <h2  className={css.alignleft}>Upload Images</h2>
                         </Row>
-                        <Row className={styles.rowheight}>
-                            <div className={styles.uploadimagecontainer}>
+                        <Row className={css.rowheight}>
+                            <div className={css.uploadimagecontainer}>
                                 <h2>Drag and Drop files here</h2>
                                 <br></br>
                                 <h3>OR</h3>
@@ -67,7 +68,8 @@ class UploadImage extends Component {
                                             backgroundColor: "#1C73FC",
                                             padding: "18px 36px",
                                             fontSize: "18px",
-                                            color : "#FFFFFF"
+                                            color : "#FFFFFF",
+                                            
                                             
                                         }}
                                       
@@ -87,7 +89,7 @@ class UploadImage extends Component {
                         </Row>
                               
                     </Col>
-                    <Col className={styles.uploadrightdiv} lg="6" >
+                    <Col className={css.uploadrightdiv} lg="6" >
                         <img src={iso} alt="Iso" />
                     </Col>
                 </Row>
