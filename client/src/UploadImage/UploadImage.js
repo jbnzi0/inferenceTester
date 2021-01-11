@@ -1,22 +1,9 @@
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
-import {withRouter} from "react-router";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import {Tabs, Tab, Paper} from '@material-ui/core';
 import {  Row, Col } from 'reactstrap';
-import {
-    Link
-  } from "react-router-dom";
 import Container from '@material-ui/core/Container';
-import AppBar from '@material-ui/core/AppBar';
-import logo from "../images/logo_bee.png";
 import styles from "../styles.module.css";
 import iso from "../images/iso.png";
 import Button from '@material-ui/core/Button';
-
 import React, {Component} from "react";
-
-
 
 class UploadImage extends Component {
 
@@ -52,11 +39,7 @@ class UploadImage extends Component {
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
                         
-        
-        
-        
-        
-        
+
         }
         )
         
@@ -65,9 +48,7 @@ class UploadImage extends Component {
         
      
     render(){
-        
-        console.log(this.state.file);
-        console.log("HELLO");
+
         
         return(
             <Container className={styles.updloadimage}>
@@ -104,16 +85,13 @@ class UploadImage extends Component {
                                     
                             </div>
                         </Row>
-                        
-                        
+                              
                     </Col>
                     <Col className={styles.uploadrightdiv} lg="6" >
                         <img src={iso} alt="Iso" />
                     </Col>
                 </Row>
             </Container>
-
-
         )
 
     }

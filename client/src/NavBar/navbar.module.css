@@ -12,7 +12,7 @@
     height: 80px;
     position: relative;
     background: #3B4055;
-    
+    border-right: 1px solid #F8F9FC;
 }
 
 .title{
@@ -29,15 +29,12 @@
       background-color: #4C5367;
       margin-left: 0;
       margin-right: 0;
-      flex-wrap: none !important;
+      flex-wrap: nowrap !important;
+      
   }
 
 
-  .vertical{
-    border-right: 1px solid #F8F9FC;
-   
-  }
-
+  
 
 
   .nextbutton {
