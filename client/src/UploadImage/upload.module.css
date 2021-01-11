@@ -1,11 +1,51 @@
 .updloadimage{
     
-    margin-top: 7%;
-    margin-bottom: 7%;
-    min-height: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    
+    width: 100%;
+    
 }
 
 .alignleft {
-
+    width: 100%;
     text-align: left;
+}
+
+
+.uploadleftdiv{
+    right : 10%;
+    padding-left: 3%;
+
+}
+
+.uploadrightdiv{
+    left : 5%;
+    
+}
+
+.uploadimagecontainer{
+    align-content: center;
+    padding-top: 20%;
+    background-color: #D8D4D4;
+    position: relative;
+    
+    height:  100%;
+    width: 100%;
+    border-style: dotted #D8D4D4;
+    
+    
+    
+}
+
+.rowheight{
+    height:100%;
+}
+
+.button{
+    padding-top: 6%;
+}
+
+.up{
+    padding-bottom: 10px;
 }

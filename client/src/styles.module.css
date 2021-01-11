@@ -59,32 +59,10 @@
 
 
 
-.uploadimagecontainer{
-    align-content: center;
-   
-    background-color: #D8D4D4;
-    position: relative;
-    padding-top: 20%;
-    height:100%;
-    width: 100%;
-    border-style: dotted #D8D4D4;
-    
-    
-}
 
-.rowheight{
-    height:100%;
-}
 
-.uploadleftdiv{
-    right : 10%;
-    padding-left: 3%;
-}
 
-.uploadrightdiv{
-    left : 5%;
-    
-}
+
 
 
 
