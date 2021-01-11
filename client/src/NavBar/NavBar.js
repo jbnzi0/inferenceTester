@@ -1,4 +1,3 @@
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 import {withRouter} from "react-router";
 import {  Row, Col } from 'reactstrap';
@@ -26,8 +25,8 @@ class NavBar extends Component {
                         
                         <div id={css.pointer} aria-label="breadcrumb" >
                         <Link  to="/uploadimage"  href="/uploadimage" >
-                            <Typography className={css.title}>UPLOAD IMAGES</Typography>
-                            <Typography color="grey">Please upload your images for pollen detection</Typography>
+                            <Typography className={css.title}>[UPLOAD IMAGES]</Typography>
+                            <Typography className={css.description}>Please upload your images for pollen detection</Typography>
                         </Link>
                         
                         
@@ -61,7 +60,6 @@ class NavBar extends Component {
                             </div>
 
                         </Col>
-                        <div className={css.vertical}></div>
                         <Col lg="4"  className={css.textDiv} >
 
                             <div id={css.pointer}  aria-label="breadcrumb">
@@ -99,7 +97,6 @@ class NavBar extends Component {
                             </div>
 
                         </Col>
-                        <div className={css.vertical}></div>
                         <Col lg="4"  className={css.textDiv}>
 
                             <div id={css.pointer}  aria-label="breadcrumb" >
@@ -112,11 +109,10 @@ class NavBar extends Component {
                             </div>
 
                         </Col>
-                        <div className={css.vertical}></div>
                         <Col lg="4"  className={css.textDiv} >
 
                             <div id={css.pointer} aria-label="breadcrumb" >
-                                <Link    to="/inferenceresults"  href="/inferenceresults" >
+                                <Link className={css.linkdiv}    to="/inferenceresults"  href="/inferenceresults" >
                                     <Typography className={css.title}>INFERENCE RESULTS</Typography>
                                     <Typography className={css.description}>Results of the pollen detection</Typography>
                                 </Link>
@@ -125,7 +121,6 @@ class NavBar extends Component {
                             </div>
 
                         </Col>
-                        <div className={css.vertical}></div>
                         </Row>
                         </div>);
         
@@ -157,9 +152,7 @@ class NavBar extends Component {
 
         if(window.location.pathname.includes('inferenceresults') )
         result=(  <Link className={css.buttonlink} maxWidth={false} minWidth={false}  to="/inferenceresults"  href="/inferenceresults" >
-                        <button type="button" className={css.nextbutton}>
-                            NEXT
-                            </button>
+                        
                 </Link>
         );
     

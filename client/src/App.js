@@ -1,5 +1,4 @@
 import './App.css';
-import styles from "./styles.module.css";
 import {
   BrowserRouter as Router,
   Route,
@@ -8,7 +7,6 @@ import {
 import { render } from "react-dom";
 import NavBar from "./NavBar/NavBar";
 import Header from "./Header/Header";
-import {Button,AppBar, Badge} from '@material-ui/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UploadImage from './UploadImage/UploadImage';
 import Algorithm from './Algorithm/Algorithm';

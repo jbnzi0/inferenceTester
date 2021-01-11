@@ -1,22 +1,10 @@
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
-import {withRouter} from "react-router";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import {Tabs, Tab, Paper} from '@material-ui/core';
 import {  Row, Col } from 'reactstrap';
-import {
-    Link
-  } from "react-router-dom";
 import Container from '@material-ui/core/Container';
-import AppBar from '@material-ui/core/AppBar';
-import logo from "../images/logo_bee.png";
 import styles from "../styles.module.css";
 import iso from "../images/iso.png";
 import Button from '@material-ui/core/Button';
-
 import React, {Component} from "react";
-
-
+import css from "./upload.module.css";
 
 class UploadImage extends Component {
 
@@ -58,32 +46,28 @@ class UploadImage extends Component {
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
-                        
-        
-        
-        
-        
-        
+
+        }
+        )
         })
+
         
       }
 
         
      
     render(){
-        
-        console.log(this.state.file);
-        console.log("HELLO");
+
         
         return(
-            <Container className={styles.updloadimage}>
-                <Row>
-                    <Col className={styles.uploadleftdiv} lg="6">
+            <Container >
+                <Row className={css.updloadimage}>
+                    <Col className={css.uploadleftdiv} lg="6">
                         <Row >
-                            <h2  className={styles.alignleft}>Upload Images</h2>
+                            <h2  className={css.alignleft}>Upload Images</h2>
                         </Row>
-                        <Row className={styles.rowheight}>
-                            <div className={styles.uploadimagecontainer}>
+                        <Row className={css.rowheight}>
+                            <div className={css.uploadimagecontainer}>
                                 <h2>Drag and Drop files here</h2>
                                 <br></br>
                                 <h3>OR</h3>
@@ -92,7 +76,8 @@ class UploadImage extends Component {
                                             backgroundColor: "#1C73FC",
                                             padding: "18px 36px",
                                             fontSize: "18px",
-                                            color : "#FFFFFF"
+                                            color : "#FFFFFF",
+                                            
                                             
                                         }}
                                       
@@ -110,16 +95,13 @@ class UploadImage extends Component {
                                     
                             </div>
                         </Row>
-                        
-                        
+                              
                     </Col>
-                    <Col className={styles.uploadrightdiv} lg="6" >
+                    <Col className={css.uploadrightdiv} lg="6" >
                         <img src={iso} alt="Iso" />
                     </Col>
                 </Row>
             </Container>
-
-
         )
 
     }

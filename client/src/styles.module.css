@@ -24,7 +24,25 @@
     min-height: 70px ;
 }
 
+.nextbutton {
+    color : white;
+    background-color: #47D292 ;
+    min-width: 100%;
+    min-height:100%;
+    
+    
+}
 
+.buttonlink{
+    text-decoration :none !important;
+    text-decoration-color : black ;
+    color : white ; 
+}
+
+.nextbutton:hoover{
+    color : white;
+    background-color: teal;
+}
 
 .breadresp{
     background-color: #3B4055;
@@ -39,22 +57,17 @@
     color: grey;
 }
 
-.updloadimage{
-    
-    margin-top: 7%;
-    margin-bottom: 7%;
-    min-height: 20%;
-}
+
 
 .uploadimagecontainer{
     align-content: center;
    
-    background-color: #F8F9FC;
+    background-color: #D8D4D4;
     position: relative;
     padding-top: 20%;
     height:100%;
     width: 100%;
-    
+    border-style: dotted #D8D4D4;
     
     
 }
@@ -64,19 +77,16 @@
 }
 
 .uploadleftdiv{
-    padding: 5%;
-    padding-left: 5%;
+    right : 10%;
+    padding-left: 3%;
 }
 
 .uploadrightdiv{
-    padding: 5%px;
-    padding-right: 5%;
+    left : 5%;
+    
 }
 
-.alignleft {
 
-    float: left;
-}
 
 h2{
     color : #3D4451 ; 
