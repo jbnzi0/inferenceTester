@@ -1,7 +1,11 @@
-import ButtonAlgo from "./ButtonAlgo";
+
 import "./AlgoCSS.css";
 
 import React, {Component} from "react";
+import ButtonAlgoSSD from "./ButtonAlgoSSD";
+import ButtonAlgoYOLO from "./ButtonAlgoYOLO";
+import ButtonAlgoRCNN from "./ButtonAlgoRCNN";
+import ButtonAlgoEFF from "./ButtonAlgoEFF";
 
 
 class Algorithm extends Component {
@@ -12,10 +16,10 @@ class Algorithm extends Component {
 
         return(
             <div className="algoGrid">
-            <ButtonAlgo algoName="Single Shot Multiple Detector"/>
-            <ButtonAlgo algoName="YOLO v5"/>
-            <ButtonAlgo algoName="Faster-RCNN"/>
-            <ButtonAlgo algoName="EfficientDet v2"/>
+            <ButtonAlgoSSD algoName="Single Shot Multiple Detector"/>
+            <ButtonAlgoYOLO algoName="YOLO v5"/>
+            <ButtonAlgoRCNN algoName="Faster-RCNN"/>
+            <ButtonAlgoEFF algoName="EfficientDet v2"/>
         </div>
 
 
