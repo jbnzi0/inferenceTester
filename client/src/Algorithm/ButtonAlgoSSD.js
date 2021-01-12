@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Icon from "./Icon"
 import "./AlgoCSS.css";
 
-class ButtonAlgo extends Component {
+class ButtonAlgoSSD extends Component {
     constructor() {
         super()
         this.state = {
@@ -25,10 +25,10 @@ class ButtonAlgo extends Component {
                 <div class="buttonBox2">
                     <p className="ssd">{this.props.algoName}</p>
                 </div>
-                <div class={btn_box_class}><div className="ssdText">Training time : 00:00:00:00 / EPOCH : 0    Average Detection: 0%</div></div>
+                <div class={btn_box_class}><div className="ssdText">Training time : 00:00:06:00 / Iterations : 15 000    Average Detection: 90%</div></div>
             </div>
         )
     }
 }
 
-export default ButtonAlgo
+export default ButtonAlgoSSD
