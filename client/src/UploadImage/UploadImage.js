@@ -14,6 +14,7 @@ class UploadImage extends Component {
           images : []
         }
         this.handleChange = this.handleChange.bind(this)
+        this.refresh = this.refresh.bind(this)
       }
 
       handleChange(event) {
@@ -53,6 +54,22 @@ class UploadImage extends Component {
         
       }
 
+      refresh() {
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+          
+        fetch("http://localhost:8080/inference/rmdir", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+      }
+
+      componentDidMount(){
+            this.refresh()
+            //setInterval(, 5000)
+      }
         
      
     render(){
