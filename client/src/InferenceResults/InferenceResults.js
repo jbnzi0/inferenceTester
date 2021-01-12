@@ -3,37 +3,53 @@ import css from "./inference.module.css";
 import Carousel from 'react-elastic-carousel';
 import React, {Component} from "react";
 
-function importAll(r) {
-    return r.keys().map(r);
-  }
-  
-
-const images = importAll(require.context('./results', false, /\.(png|jpe?g|svg)$/));
-
-let copy=[];
-
-for(let i=0;i<images.length;i++){
-  copy.push(<div key={i}> <img src={images[i].default} alt={images[i].default.name}></img></div> ) 
- }
 
 class InferenceResults extends Component {
    
     constructor(props) {
         super(props);
-     
         this.state = {
-            setComp:copy
+            div: null
         };
-      }
-     
-    render(){
+        //this.fill = this.fill.bind(this);
+        //this.importAll = this.fill.bind(this);
+    }
+
+    async componentDidMount(){
+        var images;
+
+        try {
+            require('./itworks.txt')
+            console.log("exists");
+            var x = require.context('./results/yolov5', false, /.(png|jpe?g|svg)$/);
+            images = x.keys().map(x);
+        }catch(e){
+            images = null;
+            console.log("do not exists");
+        }
+            
+        console.log("BIG TEST : ", images);
+
+        var copy = []
+        if(images){
+            for(let i=0;i<images.length;i++){
+            copy.push(<div key={i}> <img src={images[i].default} alt={images[i].default.name}></img></div> ) 
+            }
+            
+        }
         
+        this.setState({ div: copy });
+        console.log(this.state.div);
+    }
+
+    render(){
+        //this.setState.setComp = this.fill();
+        //console.log("render:",this.state.setComp);
         return(
             <div>
-           
             <Carousel className={css.carousel}>
                
-                {this.state.setComp}
+                {this.state.div}
                 
             </Carousel>
 

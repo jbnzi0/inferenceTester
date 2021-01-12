@@ -38,5 +38,22 @@ router.post('/test', async (req, res) => {
 
 });
 
+router.get('/rmdir', async (req, res) => {
+    
+    var error = false
+    fs.rmdir('/Users/golfdivine/Desktop/CS/ESIEA/2020-2021/PFE/inferenceTester/client/src/InferenceResults/results', {recursive: true}, (err) => {
+        if(err)
+            error = true
+        fs.unlink('/Users/golfdivine/Desktop/CS/ESIEA/2020-2021/PFE/inferenceTester/client/src/InferenceResults/itworks.txt', (err) => {
+            if(err && error){
+                console.log("File doesn't exist");
+                res.status(500).send("Deletion error");
+            }
+            res.status(201).send("Deleted");
+        });
+    });
+
+});
+
 
 module.exports = router;
